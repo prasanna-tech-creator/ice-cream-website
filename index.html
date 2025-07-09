@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frosty Delights - Premium Ice Cream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Frosty Delights</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+                <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+            <div class="user-actions" id="userActions">
+                <a href="#" class="btn btn-secondary" onclick="showPage('login')">Login</a>
+                <a href="#" class="btn btn-primary" onclick="showPage('signup')">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Login Page -->
+        <div id="login" class="page active">
+            <div class="auth-container">
+                <form class="auth-form fade-in" id="loginForm">
+                    <h2>Welcome Back!</h2>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    <div class="auth-switch">
+                        Don't have an account? <a href="#" onclick="showPage('signup')">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Signup Page -->
+        <div id="signup" class="page">
+            <div class="auth-container">
+                <form class="auth-form fade-in" id="signupForm">
+                    <h2>Join Frosty Delights!</h2>
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Sign Up</button>
+                    <div class="auth-switch">
+                        Already have an account? <a href="#" onclick="showPage('login')">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home" class="page">
+            <section class="hero">
+                <div class="hero-content fade-in">
+                    <h1>Premium Ice Cream Experience</h1>
+                    <p>Indulge in our handcrafted flavors made with the finest ingredients</p>
+                    <a href="#" class="btn btn-primary" onclick="showPage('about')">Discover Our Story</a>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="features-grid fade-in">
+                        <div class="feature-card">
+                            <div class="feature-icon">🍨</div>
+                            <h3>Premium Quality</h3>
+                            <p>Made with the finest ingredients and traditional techniques for an unforgettable taste experience.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🌟</div>
+                            <h3>Unique Flavors</h3>
+                            <p>Discover our exclusive collection of artisanal flavors, from classic vanilla to exotic combinations.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🚚</div>
+                            <h3>Fast Delivery</h3>
+                            <p>Enjoy our premium ice cream delivered fresh to your doorstep with our temperature-controlled delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Blog Page -->
+        <div id="blog" class="page">
+            <section class="blog-content">
+                <div class="container">
+                    <h2 style="text-align: center; color: black;margin-bottom: 3rem; font-size: 2.5rem;">Ice Cream Blog</h2>
+                    <div class="blog-grid fade-in">
+                        <article class="blog-card">
+                            <div class="blog-image">🍦</div>
+                            <div class="blog-content">
+                                <h3>The Science Behind Perfect Ice Cream</h3>
+                                <p>Discover the fascinating science that goes into creating the perfect scoop of ice cream, from temperature control to ingredient ratios.</p>
+                                <div class="blog-meta">January 15, 2025 • 5 min read</div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image">🍓</div>
+                            <div class="blog-content">
+                                <h3>Summer Flavor Trends 2025</h3>
+                                <p>Explore the hottest ice cream flavors taking the world by storm this summer, from lavender honey to spicy mango.</p>
+                                <div class="blog-meta">January 10, 2025 • 3 min read</div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image">🥛</div>
+                            <div class="blog-content">
+                                <h3>The History of Ice Cream</h3>
+                                <p>Take a journey through time to discover how ice cream evolved from ancient frozen desserts to the beloved treat we know today.</p>
+                                <div class="blog-meta">January 5, 2025 • 7 min read</div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image">🌱</div>
+                            <div class="blog-content">
+                                <h3>Sustainable Ice Cream Production</h3>
+                                <p>Learn about our commitment to environmental sustainability and how we're reducing our carbon footprint while maintaining quality.</p>
+                                <div class="blog-meta">December 28, 2024 • 4 min read</div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image">🍫</div>
+                            <div class="blog-content">
+                                <h3>DIY Ice Cream Recipes</h3>
+                                <p>Master the art of homemade ice cream with our step-by-step recipes and pro tips for achieving restaurant-quality results at home.</p>
+                                <div class="blog-meta">December 20, 2024 • 6 min read</div>
+                            </div>
+                        </article>
+                        <article class="blog-card">
+                            <div class="blog-image">🎉</div>
+                            <div class="blog-content">
+                                <h3>Ice Cream for Special Occasions</h3>
+                                <p>Celebrate life's special moments with our custom ice cream creations perfect for birthdays, weddings, and corporate events.</p>
+                                <div class="blog-meta">December 15, 2024 • 4 min read</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="about-content">
+                <div class="container">
+                    <h2 style="text-align: center; color: black;margin-bottom: 3rem; font-size: 2.5rem;">About Frosty Delights</h2>
+                    <div class="about-grid fade-in">
+                        <div class="about-text">
+                            <h2>Our Sweet Story</h2>
+                            <p>Founded in 2010, Frosty Delights began as a small family-owned ice cream parlor with a simple mission: to create the most delicious, high-quality ice cream using only the finest ingredients.</p>
+                            <p>What started as a passion project in our founder's kitchen has now grown into a beloved brand known for innovative flavors and exceptional quality. We source our ingredients from local farms and sustainable suppliers, ensuring every scoop is not only delicious but also responsibly made.</p>
+                            <p>Today, we're proud to serve our premium ice cream to thousands of satisfied customers across the country, while maintaining the same commitment to quality and craftsmanship that defined our humble beginnings.</p>
+                            <a href="#" class="btn btn-primary" onclick="showPage('contact')">Get in Touch</a>
+                        </div>
+                        <div class="about-image">
+                            🏪
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="contact-content">
+                <div class="container">
+                    <h2 style="text-align: center; color:black; margin-bottom: 3rem; font-size: 2.5rem;">Contact Us</h2>
+                    <div class="contact-grid fade-in">
+                        <div class="contact-form">
+                            <h3>Send us a Message</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <label for="contactName">Name</label>
+                                    <input type="text" id="contactName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email</label>
+                                    <input type="email" id="contactEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactSubject">Subject</label>
+                                    <input type="text" id="contactSubject" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Message</label>
+                                    <textarea id="contactMessage" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <div class="contact-item">
+                                <i>📍</i>
+                                <span>123 Sweet Street, Ice Cream ,Coimbatore, India</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>📞</i>
+                                <span>+91 12345 67890</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>✉️</i>
+                                <span>prasanna@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>🕒</i>
+                                <span>Mon-Sun: 10:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="contact-item">
+                                <i>🌐</i>
+                                <span>www.frostydelights.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Frosty Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
